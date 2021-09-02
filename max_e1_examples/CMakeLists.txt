@@ -18,3 +18,6 @@ target_link_libraries(actuators_example max_e1 dxl_x64_cpp)
 
 add_executable(motions_example src/motions_example.cpp)
 target_link_libraries(motions_example max_e1 dxl_x64_cpp)
+
+add_executable(bus_example src/bus_example.cpp)
+target_link_libraries(bus_example max_e1 dxl_x64_cpp)

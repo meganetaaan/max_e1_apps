@@ -21,6 +21,7 @@ bool MaxE1::connect()
     sensors = std::make_shared<MaxE1Sensors>(core_);
     actuators = std::make_shared<MaxE1Actuators>(core_);
     motions = std::make_shared<MaxE1Motions>(core_);
+    bus = std::make_shared<MaxE1Bus>(core_);
     
     return result;
 }
@@ -42,5 +43,6 @@ bool MaxE1::init()
     sensors->init();
     actuators->init();
     motions->init();
+    bus->init();
     return true;
 }

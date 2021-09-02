@@ -5,6 +5,7 @@
 #include "max_e1_sensors.hpp"
 #include "max_e1_actuators.hpp"
 #include "max_e1_motions.hpp"
+#include "max_e1_bus.hpp"
 
 class MaxE1
 {
@@ -17,6 +18,7 @@ public:
     std::shared_ptr<MaxE1Sensors> sensors;
     std::shared_ptr<MaxE1Actuators> actuators;
     std::shared_ptr<MaxE1Motions> motions;
+    std::shared_ptr<MaxE1Bus> bus;
 
 private:
     std::shared_ptr<MaxE1Core> core_;
