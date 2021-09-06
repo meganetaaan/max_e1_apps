@@ -7,6 +7,10 @@ project(max_e1_lib VERSION 1.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+set(dynamixel_install_dir ../../DynamixelSDK-3.7.51/c++/build/linux_sbc/install)
+include_directories(${dynamixel_install_dir}/include)
+link_directories(${dynamixel_install_dir}/lib)
+
 add_library(max_e1 SHARED
     src/max_e1_core.cpp
     src/max_e1_sensors.cpp

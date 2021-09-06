@@ -6,7 +6,7 @@
 #include "max_e1.hpp"
 
 int main() {
-    MaxE1 max_e1("/dev/ttyACM0", 1000000);
+    MaxE1 max_e1("/dev/ttyS1", 1000000);
     if(max_e1.connect()){
         max_e1.init();
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
