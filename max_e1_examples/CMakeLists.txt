@@ -22,5 +22,4 @@ add_executable(actuators_example src/actuators_example.cpp)
 target_link_libraries(actuators_example max_e1 ${dynamixel_lib_name})
 
 add_executable(motions_example src/motions_example.cpp)
-add_executable(bus_example src/bus_example.cpp)
-target_link_libraries(bus_example max_e1 ${dynamixel_lib_name})
+target_link_libraries(motions_example max_e1 ${dynamixel_lib_name})
